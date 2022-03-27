@@ -10,12 +10,11 @@ stop_tomcat()
 start_tomcat()
 {
    $CATALINA_HOME/bin/catalina.sh start
-   end
 }
 
 rename() {
    rm build/libs/crud.war
-   if mv build/libs/kodilla-tasks-new-version-0.0.1-SNAPSHOT.war build/libs/crud.war; then
+   if mv build/libs/tasks-0.0.1-SNAPSHOT.war build/libs/crud.war; then
       echo "Successfully renamed file"
    else
       echo "Cannot rename file"
@@ -35,7 +34,7 @@ fail() {
    echo "There were errors"
 }
 
-end() {
+end2() {
    echo "Work is finished"
 }
 
