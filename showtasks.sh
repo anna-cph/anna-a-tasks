@@ -11,4 +11,3 @@ if chmod a+x runcrud.sh
 else
   echo "There were errors"
 fi
-
